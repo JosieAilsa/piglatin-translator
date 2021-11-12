@@ -1,0 +1,31 @@
+{
+  "name": "word-translator",
+  "version": "1.0.0",
+  "description": "Project to practcie and demonstarte understanding of pure functions.",
+  "main": "script.js",
+  "scripts": {
+    "lasagne": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosieAilsa/word-translator.git"
+  },
+  "keywords": [],
+  "author": "Josie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosieAilsa/word-translator/issues"
+  },
+  "homepage": "https://github.com/JosieAilsa/word-translator#readme",
+  "dependencies": {
+    "sass": "4.0.0 ",
+    "chartjs": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "jest": "^27.3.1"
+  }
+}
