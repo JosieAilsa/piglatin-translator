@@ -1,2 +1,4 @@
 # word-translator 
-Project to practcie and demonstarte understanding of pure functions. 
+Pig Latin translator written to practice writing pure functions and unit testing.
+
+The translator only takes singular words. 

@@ -117,11 +117,15 @@ describe("Pig Latin translator unit tests", () => {
 describe("Pig Latin translator integration tests", () => {
     describe("Positive integration tests", () => {
         test("Test first letter vowel", () => {
+            //Arrange
             const pigLatin = getPigLatin("ate")
+            //Assert
             expect(pigLatin).toBe("ateway");
         });
         test("Test first letter consonant", () => {
+            //Arrange
             const pigLatin = getPigLatin("hello")
+            //Assert
             expect(pigLatin).toBe("ellohay");
         });
     })
