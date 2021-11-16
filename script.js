@@ -1,40 +1,44 @@
 // import { typeAlias } from "@babel/types";
 
 ///Break down into an array and make lower case
-/*export*/ const getWordArr = word => {
+export const getWordArr = word => {
    return word.toLowerCase().split("");
 }
 ///Get the starting section of the word based on its index 
-/*export*/  const getPrefix = (arr,i) => {
+export  const getPrefix = (arr,i) => {
     if( !Array.isArray(arr) || arr.length === 0){
         throw new Error(`This is not a valid word`)
     }else {
-    return arr.slice(0,i+1).join("");
+    const newArr = arr.slice(0,i+1).join("")
+    return newArr;
     }
 }
 ///Move the bottom section of the word to the end. 
-/*export*/ const getAppendPrefix = (arr,i,prefix) => {
- if (!Array.isArray(arr) || arr.length === 0 || !(typeof prefix === "string")){
-        throw new Error(`This is not a valid word`)
- } else {
- return arr.slice(i).join("") + prefix;
- }
-}
+export const getAppendPrefix = (arr,i,prefix) => {
+    if (!Array.isArray(arr) || arr.length === 0 || !(typeof prefix === "string")){
+            throw new Error(`This is not a valid word`)
+    } else {
+    const newArr = arr.slice(i).join("") + prefix
+    return newArr;
+    }
+    }
 //Append the right suffix 
-/*export*/  const getAppendAy = appendedPrefix => {
+export  const getAppendAy = appendedPrefix => {
     if (!(typeof appendedPrefix === "string")){
     throw new Error(`This is not a valid word`)
     }
-    return `${appendedPrefix}ay`
+    const appendedAy = `${appendedPrefix}ay`
+    return appendedAy;
     }
-/*export*/ const getAppendWay = word => {
+export const getAppendWay = word => {
     if (!(typeof word === "string")){
         throw new Error(`This is not a valid word`)
     }
-    return `${word}way`
+    const appendedWay = `${word}way`;
+    return appendedWay;
    }
 
-/*export*/ const checkIfValid = word => {
+export const checkIfValid = word => {
     const validRegExp = new RegExp (/^[a-zA-Z]+$/)
     if (!validRegExp.test(word) || !typeof word === "string"){
         throw new Error(`This is not a valid word`);
@@ -44,7 +48,7 @@
 
 }
 //Main function 
-/*export*/ const getPigLatin = (word) => {
+export const getPigLatin = (word) => {
     //Add a regex at the start to throw error if not a word.
     const isValid = checkIfValid(word);
     if (isValid) {
@@ -74,5 +78,5 @@
         return pigLatin
     }   
 }
-console.log(getPigLatin("hello")); 
+console.log(getPigLatin("ate")); 
 //
