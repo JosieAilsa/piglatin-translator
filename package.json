@@ -4,7 +4,7 @@
   "description": "Project to practcie and demonstarte understanding of pure functions.",
   "main": "script.js",
   "scripts": {
-    "lasagne": "jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
